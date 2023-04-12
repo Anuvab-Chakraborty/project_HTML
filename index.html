@@ -15,19 +15,30 @@
 <body>
     <header>
         <center><h1>Welcome to the football store</h1></center>
+
+        <nav aria-label="Primary Navigation">
+            <ul>
+                <li>
+                    <a href="#about">About The football store</a>
+                </li>
+                <li>
+                    <a href="#items">Items for sale</a>
+                </li>
+            </ul>
+        </nav>
         
     </header>
     <hr>
     <main>
         <article id="about">
-            <h2>About The Football Store</h2>
+            <h3>About The Football Store</h3>
             <p><abbr title="The football store">TFS</abbr> was founded in 2023. It was built
                 from our love of rhe beautiful game ⚽.
                 <br>
                 We hope our shop adds an unique and beautiful presence
                 to our town.
             </p>
-            <h3>Football Trivia?</h3>
+            <h4>Football Trivia?</h4>
             <aside>
                 <details>
                     <summary><b>When did the first football match
@@ -38,9 +49,60 @@
                 </details>
             </aside>
         </article>
+        <hr>
 
-        
+        <article id="items">
+            <h3>Items for sale</h3>
+
+            <table>
+
+                <caption><b>Our items</b></caption>
+
+                <thead>
+                    <tr>
+                        <th scope="col">Category</th>
+                        <th scope="col">Item</th>
+                        <th scope="col">Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row" rowspan="2">Wearables</th>
+                        <td>Jersey</td>
+                        <td>450-1050 inr</td>
+                    </tr>
+                    <tr>
+                        <td>Shorts</td>
+                        <td>250-550 inr</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" rowspan="2">Accessories</th>
+                        <td>shoes</td>
+                        <td>550-2050 inr</td>
+                    </tr>
+                    <tr>
+                        <td>socks</td>
+                        <td>150-350 inr</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">football</th>
+                        <td colspan="2"> &nbsp;&nbsp;&nbsp; 450-920 inr</td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+
     </main>
+
+    <footer>
+        <p>
+            <a href="#">Back To Top</a>
+        </p>
+        <br>
+        <p>
+            Copyright &copy; The football store
+        </p>
+    </footer>
 
 </body>
 
