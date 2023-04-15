@@ -5,4 +5,4 @@ to understand the system better and get good at web development
 if you like the project star it on github and you can also try
 it on your own as a challenge.
 Thanks!
-The website is live at : to be updated
+The website is live at : https://anuvab-chakraborty.github.io/project_HTML/
