@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- this html tag is called the opening tag-->
+<head>
+    <!--contains the metadata that is not displayed on the webpage
+    charset means a set of characters which covers almost all of characters available in world-->
+    <meta charset="UTF-8">
+    
+    <meta name="author" content="Anuvab Chakraborty">
+    
+    <meta name="description" content="This contains all the info I want to share">
+    
+    <title>My first web page</title>
+
+    <link rel="icon" href="html.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="main.css" type="text/css">
+
+
+
+</head>
+
+
+<body>
+    <!-- contains everything the user sees on the browser-->
+    <header>
+        <h1>WELCOME VISITORS</h1>
+
+        <!--hr tag means horizontal rule-->
+
+
+        <!--<nav aria-labelledby="primary-navigation">-->
+            <!--<h2 id="primary-navigation">Primary Nav</h2>-->
+        <nav aria-label="primary navigation">
+            <ul>
+                <li>
+                    <a href="#html">Learn HTML</a>
+                </li>
+                <li>
+                    <a href="#bullshit">SHIT</a>
+                </li>
+                <li>
+                    <a href="#contact">CONTACT ME</a>
+                </li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <hr>
+
+    <main>
+
+        <article id="html">
+        <h2>yo Friends</h2>
+        <p>This is my first web page.</p>
+        <section>
+            <h3>AWESOME THINGS</h3>
+        <figure>
+            <img src="img/awesome_scenery.jpg" alt="BUTIFUL FUTO" title="OK done" height="200" width="200" loading="lazy">
+            <figcaption>
+                AWESOME SCENERY
+            </figcaption>
+        </figure>
+        </section>
+        <section>
+        <h3>OMG</h3>
+        <p>All the best with web development.
+            <br>...So excited about this.
+            <br>...Teach me in detail.
+        </p>
+        <img src="img/dragon.jpg" alt="dragon" title="DRAGON" width="217" height="122" loading="lazy">
+        <figure>
+            <figcaption>An example of html code</figcaption>
+            <code>&lt;h1&gt;Hello World&lt;/h1&gt;</code>
+        </figure>
+        </section>
+        </article>
+        
+        <hr>
+        <aside>
+            <details>
+                <summary>What <mark>color</mark> is your <mark>bugatti?</mark></summary>
+                <p><mark>Colorless</mark> cause you don't have one!</p>
+            </details>
+        </aside>
+
+        <br>
+        <table>
+            <caption>MY DAILY SCHEDULE</caption>
+            <thead>
+                <tr>
+                    <th scope="col">&nbsp;</th>
+                    <th scope="col">Time</th>
+                    <th scope="col">Activity</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Ebening</th>
+                    <td>
+                        <time datetime="08:00">8PM </time>-
+                        -<time datetime="11:00">11PM  </time>
+                    </td>
+                    <td>Entertainment</td>
+                </tr>
+                <tr>
+                    <th scope="row">Dinner time</th>
+                    <td>
+                        <time datetime="11:00">11PM </time>-
+                        -<time datetime="12:00">12AM  </time>
+                    </td>
+                    <td>Dinner</td>
+                </tr>
+                <tr>
+                    <th scope="row">Night</th>
+                    <td>
+                        <time datetime="12:00">12AM </time>-
+                        -<time datetime="05:00">5AM  </time>
+                    </td>
+                    <td>Study</td>
+                </tr>
+                <tr>
+                    <th scope="row">Left time</th>
+                    <td rowspan="2">All other times</td>
+                    <td>Freetime</td>
+                    <!--<td colspan="2">Freetime</td>-->
+                </tr>
+                <tr>
+                    <th scope="row">Rest</th>
+                    <td>Sleep</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">That's my day summed up</td>
+                </tr>
+            </tfoot>
+        </table>
+        <article id="bullshit">
+        <h3>Bull shit article</h3>
+        <section>
+        <h3>Hey yo.</h3>
+        <p>Wanaa hang out?</p>
+
+        <h3>OMG</h3>
+        <p>What resources do you use bro?
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...YouTube yo.
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...From David Gray channel yo.
+        </p>
+        <ol>
+            <li>Hello there</li>
+            <li>HMMM I wanna eat good shit</li>
+            <li>Let's cook it then</li>
+        </ol>
+        </section>
+    
+        <h3>But why</h3>
+        <section>
+        <h3>because:</h3>
+        <ul>
+        <li><p>Cuz <em>I hate paid resources bro!</em>
+            <br>So I learn from <abbr title="YouTube"><a href="https://www.youtube.com/">YT</a></abbr> Yo.
+            <br>I am from <abbr title="West Bengal">WB</abbr>
+            <br><strong>Don't wanna pay anything</strong>
+        </p>
+        </li>
+
+        <li><p>My address is:</p>
+        <address>
+            1/16 CIT Building<br>
+            Christopher Road<br>
+            Kolkata,West Bengal.
+        </address>
+        </li>
+        </ul>
+        <!--This is called desxription list or dl
+        it contains 2 list elements description terms
+        or dt and description details or dd-->
+
+        <dl>
+            <dt>HAWAII</dt>
+            <dd>I love <em><strong>hawai</strong></em></dd>
+
+        </dl>
+        </section>
+        </article>
+
+        <hr>
+
+        <article id="contact">
+            <h3>Contact Me</h3>
+            <p>I would really like to hear from you!</p>
+
+            <form action="https://httpbin.org/get" method="get">
+                <fieldset>
+                    <legend>Personal Info</legend>
+                    <p>
+                        <label for="firstname">First Name:</label>
+                        <input type="text" name="firstname" id="firstname" placeholder="Naruto"
+                        autocomplete="on" required autofocus>
+                    </p>
+                    <p>
+                        <label for="lastname">Last Name:</label>
+                        <input type="text" name="lastname" id="lastname" placeholder="Uzumaki"
+                        autocomplete="on" required>
+                    </p>
+                    <p>
+                        <label for="password">Password:</label>
+                        <input type="password" name="password" id="password" placeholder="Password"
+                        required>
+                    </p>
+                    <p>
+                        <label for="phone">Phone:</label>
+                        <input type="tel" name="phone" id="phone" placeholder="0123456789"
+                        pattern="[0-9]{10}" required>
+                    </p>
+                    <p>
+                        <label for="numbers">Fav Number:</label>
+                        <input type="number" name="numbers" id="numbers"
+                        min="0" max="100" step="1" value="7">
+                    </p>
+                    
+                    <p>
+                        <label for="city">Your Favorite Cities:</label>
+                        <select name="city" id="city" multiple size="4">
+                            <optgroup label="Asia">
+                                <option value="kolkata" selected>Kolkata</option>
+                                <option value="mumbai">Mumbai</option>
+                                <option value="delhi">Delhi</option>
+                                <option value="banglore">Bangalore</option>
+                            </optgroup>
+                            <optgroup label="European">
+                                <option value="paris">Paris</option>
+                                <option value="london">London</option>
+                                <option value="milan">Milan</option>
+                                <option value="madrid">Madrid</option>
+                            </optgroup>
+                            <optgroup label="America">
+                                <option value="new york">New York</option>
+                                <option value="las vegas">Las Vegas</option>
+                                <option value="miami">Miami</option>
+                                <option value="boston">Boston</option>
+                            </optgroup>
+                            <option value="other">Other</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="coffee">Your Favorite Coffee </label>
+                        <input type="text" name="coffee" id="coffee" list="coffee-list">
+                        <datalist id="coffee-list">
+                            <option value="Normal Coffee">
+                            <option value="Latte">
+                            <option value="Americano">
+                            <option value="Espresso">
+                            <option value="Cortado">
+                            <option value="Other">
+                        </datalist>
+                    </p>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>What is your favourite food?</legend>
+                    <p>
+                        <input type="radio" name="food" id="tacos" value="tacos">
+                        <label for="tacos">Tacos</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="food" id="biriyani" value="biriyani">
+                        <label for="biriyani">Biriyani</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="food" id="pizza" value="pizza">
+                        <label for="pizza">Pizza</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="food" id="other" value="other">
+                        <label for="other">Other</label>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Do you have pets?</legend>
+                    <p>
+                        <input type="checkbox" name="pets" id="dog" value="dog">
+                        <label for="dog">Dog</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="pets" id="cat" value="cat">
+                        <label for="cat">Cat</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="pets" id="fish" value="fish">
+                        <label for="fish">Fish</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="pets" id="otherPets" value="otherPets">
+                        <label for="otherPets">Other</label>
+                    </p>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Hey! Send me a note</legend>
+                    <label for="message">Your message:</label>
+                    <br>
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Type your message here"></textarea>
+                </fieldset>
+                <br>
+                <button type="submit">Submit</button>
+                <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
+                <button type="reset">Reset</button>
+            </form>
+
+        </article>
+
+    </main>
+
+    <hr>
+    <footer>
+        <p>
+            &lt;&lt;&lt; &copy;<a href="about.html">Anuvab </a> &gt;&gt;&gt;
+        </p>
+
+        <p>
+            <a href="#">BACK TO TOP</a>
+        </p>
+    </footer>
+<!--All the p tags h tags br tags are block tags
+while em or emphasis tag, strong tag is an inline tag-->
+<!--nbsp tag or non-breaking space is used to create
+    white spaces in html to declare this type of tag
+    we need to declare an & symbol first
+these are called html entities
+
+lt-lesser than tag
+copy means copyright symbol
+gt means greater than
+a means anchor tag used to link one page with another
+link rel in head means relative reference to a file in
+same server
+
+section tag is used to make the code more semantic tag
+nav means navigation another semantic html tag
+USING NAV helps us to create sections that we can easily 
+navigate to
+download attribute along with anchor tag makes it possible to create downloadable hyperlink
+mailto:xyz@email.com adds mailable link
+tel:1234548594380 adds callable link with anchor tag
+target blank is used to create another new tab link
+we can add different attribute to img along with source(src) alt
+title , width, height. also loading attribute loading is set to default always
+custom loading value : lazy
+used to load pages faster
+figure tag is used to wrap images and other things
+and figcaption is used to give caption to the image
+figcaption can be the first thing or the last thing in figure tag 
+to generate dummy images use placeholder.com
+loremipsum.io
+unsplash.com for free images
+pexels.com
+gratisography.com
+pixabay.com
+IrFanView software
+tinyppg
+3 levels of heading best practice
+
+using #section name along with anchor and href tag helps us
+to navigate directly to that section of the page.
+hr is used to define topic changes
+header is also a semantic tag
+can only be one main per page
+there can be more than one footer per page
+if adding more than one navigation tag per page
+you must label each nav by using aria-label or
+aria-labelled by as id.
+we can also use article tag to declare a section
+article has a clear topic while section is still
+generic
+aside tag can be used to create drop down menus
+details tag can be used to describe text written on the
+drop down
+and summary tag can be used to write up the details of
+the topic
+div is similar to section without any semantic meaning
+it stands for divider
+span is an inline element used to give special styling to
+a word
+time element with datetime attribute can also help a
+screen-reader
+in table we use tr to say table row and
+td to hold data
+table doesn't cover up the whole length of the browser
+we use th to declare table headers
+if we want to specify a coloumn that needs more than
+one coloumn we can do that by using colspan
+table also contains a caption element and a rowspan element
+th is header tag for table
+tfoot is footer
+thead is header for entire table
+tbody is body for entire table
+scope is a semantic tag to declare the scope of an element
+the form element is used to declare a form
+action menas we specify there where we are sending the data to
+and method is used to specify what we expect from the form
+it can be get or post anything
+contents of forms are mostly labels and inputs
+input tag takes type of the input as argument, name as 
+another argument to know which label it's connected to
+and also id to connect with the name it also includes a
+placeholder tag to write random messages on the input field
+autocomplete remembers the previous input given into that
+required tag is used to make a field must required
+and autofocus can be used to make that field focused
+only 1 per page is allowed
+type tel is used to bring up numeric keypad in a cellphone
+instead of alphanumeric keypad
+to create the up down arrow in form for numbers
+we can use number type and give min and max number argument
+also give a step value for it and in place of placeholder
+we use value here as an additional argument
+to create a drop down list we must use select element
+inside select to select multiple values we can use multiple
+size element
+to create options group we can use optgroup tag
+to create options in optgroup we can use options tag
+we can use selected tag to preselect one value
+we can use the datalist type of list with different
+options
+another input type for forms is radio it contains value
+id and name
+checkbox can be used to create a form in which we can select
+multiple values
+textarea can be used to give users option to write a message
+button is a tag that is used to create buttons it has many
+types like submit,reset etc.
+formmethod and formaction can be used to specify where the form
+goes and the protocols to send the data
+when start the form we can also mention these
+-->
+</body>
+
+</html>
